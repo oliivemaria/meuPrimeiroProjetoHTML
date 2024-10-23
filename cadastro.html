@@ -7,90 +7,35 @@
   <title>Formulário de Login</title>
 </head>
 <body>
-  <form action="./index.html" method="get">
-    <h1>Cadastro</h1>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+  <form action="./cadastramento.html" method="get">
+    <h1>Cadastro de Novos Usuários</h1>
+        <form method="post" action="#">
+            <label for="nomePessoa">Nome:</label><br>
+            <input name="nomePessoa" type="text" placeholder="Nome Completo" size="30" required><br><br>
 
-      <style>
-        
-    form {
-        text-align: center;
-    }
+            <label for="emailPessoa">Email:</label><br>
+            <input name="emailPessoa" type="email" required><br><br>
 
-    p {
-        margin: 10px 0;
-    }
+            <label for="senhaPessoa">Senha:</label><br>
+            <input name="senhaPessoa" type="password" placeholder="****" maxlength="10" required><br><br>
 
-
-    body {
-        background: beige;
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-    }
-
-
-    h1 {
-        text-align: center;
-        color: #333;
-        font-size: 24px;
-    }
-
-
-    button {
-        background-color: #4CAF50; /* Verde */
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    </style>
-</head>
-<body>
-    
-     <form method="post" action="#">
-            <h1>Formulário de Cadastro</h1>
-
-               <label for="nomePessoa">Nome:</label>
-               <input name="nomePessoa" type="next" required><br><br>
-
-               
-               <label for="emailPessoa">E-mail  :</label>
-               <input name="emailPessoa" type="email" required><br><br>
-
-
-              <label for="senhaPessoa">Senha:</label><br>
-        <input name="senhaPessoa" type="password" required><br><br>
-
-        
-        <label for="confirmarsenhaPessoa">Confirme a Senha:</label><br>
-        <input name="confirmarsenhaPessoa" type="password" required><br><br>
-
+            <label for="confirmarsenhaPessoa">Confirme a Senha:</label><br>
+            <input name="confirmarsenhaPessoa" type="password" placeholder="****" maxlength="10" required><br><br>
             
-             
-
-
-               <label for="perfilPessoa">Perfil:</label>
-               <select name="perfilPessoa" required>
-                   <option value="Professor">Professor</option>
-                   <option value="adm">Administrador</option>
-                   <option value="jogador">Jogador</option>
-                                 
-               </select><br><br>
-
-      
-
-     </form>
-
-
-
-    <button type="button" onclick="location.href='index.html'">Voltar</button>
-    <button type="submit">Cadastrar</button>
-    </p>
-  </form>
+            <label for="perfilPessoa">Perfil:</label><br>
+            <select name="perfilPessoa">
+                <option value="" date-default disabled selected>Selecione um Perfil:</option>
+                <option value="opcao1">Jogador</option>
+                <option value="opcao2">Professor</option>
+                <option value="opcao3">Estudante</option>
+                <option value="opcao4">Administrador</option>
+            </select><br><br>
+            <p>
+              <button type="submit">Cadastrar</button>
+            </p>
+            <p>
+              <button type="button" onclick="location.href='index.html'">Voltar</button>
+            </p>
+        </form>
 </body>
 </html>
